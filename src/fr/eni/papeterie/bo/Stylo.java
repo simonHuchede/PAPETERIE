@@ -7,12 +7,12 @@ public class Stylo extends Article {
     }
 
     public Stylo(int idArticle, String marque, String ref, String designation, float pu, int qte, String couleur) {
-        super(idArticle, marque, ref, designation, pu, qte);
+        super(idArticle, marque, ref, designation,qte, pu );
         this.couleur = couleur;
     }
 
     public Stylo(String marque, String ref, String designation, float pu, int qte, String couleur) {
-        super(marque, ref, designation, pu, qte);
+        super(marque, ref, designation, qte,pu);
         this.couleur = couleur;
     }
 

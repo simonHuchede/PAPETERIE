@@ -11,16 +11,16 @@ public abstract class Article {
     public Article() {
     }
 
-    public Article(int idArticle, String marque, String ref, String designation, float pu, int qte) {
+    public Article(int idArticle, String ref, String designation, String marque, int qte, float pu) {
         this.idArticle = idArticle;
         this.marque = marque;
         this.reference = ref;
         this.designation = designation;
         this.prixUnitaire = pu;
-        this.qteStock = qteStock;
+        this.qteStock = qte;
 
     }
-    public Article(String marque,String ref, String designation, float pu, int qte) {
+    public Article(String ref, String designation,String marque, int qte,float pu) {
         this.marque = marque;
         this.reference = ref;
         this.designation = designation;

@@ -7,12 +7,12 @@ public class Ramette extends Article {
     }
 
     public Ramette(int idArticle, String marque, String ref, String designation, float pu, int qte, int grammage) {
-        super(idArticle, marque, ref, designation, pu, qte);
+        super(idArticle, marque, ref, designation,qte, pu);
         this.grammage = grammage;
     }
 
     public Ramette(String marque, String ref, String designation, float pu, int qte, int grammage) {
-        super(marque, ref, designation, pu, qte);
+        super(marque, ref, designation, qte,pu);
         this.grammage = grammage;
     }
 

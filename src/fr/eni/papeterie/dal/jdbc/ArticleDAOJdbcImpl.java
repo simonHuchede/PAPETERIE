@@ -74,6 +74,7 @@ public class ArticleDAOJdbcImpl implements ArticleDAO {
                 String designation = rs.getString("designation");
                 float prixUnitaire = rs.getFloat("prixUnitaire");
                 int quantiteStock = rs.getInt("qteStock");
+
                 int grammage = rs.getInt("grammage");
                 String couleur = rs.getString("couleur");
                 String type = rs.getString("type");

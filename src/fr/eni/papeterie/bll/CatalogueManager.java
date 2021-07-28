@@ -42,6 +42,7 @@ public class CatalogueManager {
     public void addArticle(Article a) throws BLLException {
         try {
             validerArticle(a);
+            System.out.println(a);
             daoArticle.insert(a);
 
         } catch (DALException e) {
@@ -60,7 +61,6 @@ public class CatalogueManager {
 
     public void removeArticle(int index) throws BLLException {
         try {
-
             daoArticle.delete(index);
         } catch (DALException e) {
             throw new BLLException("erreur dans la méthode removeArticle");
